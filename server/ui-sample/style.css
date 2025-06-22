@@ -1,0 +1,103 @@
+body {
+    background-color: #F0F0F0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.main {
+    width: 760px;
+    margin: 0 auto;
+    border: 1px solid #999999;
+}
+
+table.header {
+    background-color: #6699CC;
+    color: white;
+    font-weight: bold;
+}
+
+table.problems {
+    border: 1px solid #CCCCCC;
+}
+
+table.problems td, table.problems th {
+    border: 1px solid #CCCCCC;
+    padding: 4px;
+}
+
+table.problems th {
+    background-color: #CCCCCC;
+}
+
+table.status td {
+    padding: 3px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+table.status tr:nth-child(odd) {
+    background-color: #EEEEEE;
+}
+
+.accepted {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #DDDDDD;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #999999;
+}
+
+.footer {
+    text-align: center;
+    font-size: 10px;
+    color: #666666;
+    padding: 10px;
+}
+
+textarea {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+input {
+    border: 1px solid #999999;
+    padding: 2px;
+}
+
+input[type="submit"] {
+    background-color: #CCCCCC;
+    border: 1px outset #DDDDDD;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+} 

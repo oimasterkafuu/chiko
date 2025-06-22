@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>运行状态 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="refresh" content="30">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html"><b>[运行状态]</b></a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">运行状态</div>
+                <p>每30秒自动刷新一次</p>
+                <form action="status.php" method="get">
+                    <table cellpadding="2">
+                        <tr>
+                            <td>题目ID：</td>
+                            <td><input type="text" name="problem_id" size="6"></td>
+                            <td>用户：</td>
+                            <td><input type="text" name="user_id" size="10"></td>
+                            <td>语言：</td>
+                            <td>
+                                <select name="language">
+                                    <option value="-1" selected>全部</option>
+                                    <option value="0">C</option>
+                                    <option value="1">C++</option>
+                                    <option value="2">Java</option>
+                                    <option value="3">Pascal</option>
+                                </select>
+                            </td>
+                            <td>结果：</td>
+                            <td>
+                                <select name="result">
+                                    <option value="-1" selected>全部</option>
+                                    <option value="4">通过</option>
+                                    <option value="0">等待</option>
+                                    <option value="1">编译错误</option>
+                                    <option value="2">答案错误</option>
+                                    <option value="3">超时</option>
+                                </select>
+                            </td>
+                            <td><input type="submit" value="查询"></td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <table class="status" width="95%" cellspacing="0">
+                    <tr style="background-color: #CCCCCC; font-weight: bold;">
+                        <td width="6%">运行ID</td>
+                        <td width="10%">用户</td>
+                        <td width="6%">题目</td>
+                        <td width="8%">结果</td>
+                        <td width="6%">内存</td>
+                        <td width="6%">时间</td>
+                        <td width="8%">语言</td>
+                        <td width="6%">代码长度</td>
+                        <td width="15%">提交时间</td>
+                    </tr>
+                    <tr>
+                        <td>12345</td>
+                        <td><a href="userinfo.php?user=zhang3">zhang3</a></td>
+                        <td><a href="problem_detail.html?id=1000">1000</a></td>
+                        <td class="accepted">通过</td>
+                        <td>256K</td>
+                        <td>15MS</td>
+                        <td>C++</td>
+                        <td>120B</td>
+                        <td>2000-12-20 08:30:25</td>
+                    </tr>
+                    <tr>
+                        <td>12344</td>
+                        <td><a href="userinfo.php?user=li4">li4</a></td>
+                        <td><a href="problem_detail.html?id=1002">1002</a></td>
+                        <td class="wrong">答案错误</td>
+                        <td>320K</td>
+                        <td>46MS</td>
+                        <td>C++</td>
+                        <td>320B</td>
+                        <td>2000-12-20 08:28:17</td>
+                    </tr>
+                    <tr>
+                        <td>12343</td>
+                        <td><a href="userinfo.php?user=wang5">wang5</a></td>
+                        <td><a href="problem_detail.html?id=1005">1005</a></td>
+                        <td class="wrong">超时</td>
+                        <td>640K</td>
+                        <td>1000MS</td>
+                        <td>Java</td>
+                        <td>502B</td>
+                        <td>2000-12-20 08:27:32</td>
+                    </tr>
+                    <tr>
+                        <td>12342</td>
+                        <td><a href="userinfo.php?user=li4">li4</a></td>
+                        <td><a href="problem_detail.html?id=1001">1001</a></td>
+                        <td class="accepted">通过</td>
+                        <td>192K</td>
+                        <td>31MS</td>
+                        <td>C</td>
+                        <td>145B</td>
+                        <td>2000-12-20 08:26:45</td>
+                    </tr>
+                    <tr>
+                        <td>12341</td>
+                        <td><a href="userinfo.php?user=zhao6">zhao6</a></td>
+                        <td><a href="problem_detail.html?id=1004">1004</a></td>
+                        <td class="wrong">编译错误</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Pascal</td>
+                        <td>210B</td>
+                        <td>2000-12-20 08:26:19</td>
+                    </tr>
+                    <tr>
+                        <td>12340</td>
+                        <td><a href="userinfo.php?user=sun7">sun7</a></td>
+                        <td><a href="problem_detail.html?id=1009">1009</a></td>
+                        <td>等待</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>C++</td>
+                        <td>278B</td>
+                        <td>2000-12-20 08:25:52</td>
+                    </tr>
+                    <tr>
+                        <td>12339</td>
+                        <td><a href="userinfo.php?user=zhang3">zhang3</a></td>
+                        <td><a href="problem_detail.html?id=1003">1003</a></td>
+                        <td class="accepted">通过</td>
+                        <td>436K</td>
+                        <td>62MS</td>
+                        <td>C++</td>
+                        <td>310B</td>
+                        <td>2000-12-20 08:25:05</td>
+                    </tr>
+                    <tr>
+                        <td>12338</td>
+                        <td><a href="userinfo.php?user=wang5">wang5</a></td>
+                        <td><a href="problem_detail.html?id=1007">1007</a></td>
+                        <td class="wrong">超时</td>
+                        <td>892K</td>
+                        <td>1000MS</td>
+                        <td>C++</td>
+                        <td>452B</td>
+                        <td>2000-12-20 08:23:58</td>
+                    </tr>
+                    <tr>
+                        <td>12337</td>
+                        <td><a href="userinfo.php?user=zhao6">zhao6</a></td>
+                        <td><a href="problem_detail.html?id=1000">1000</a></td>
+                        <td class="accepted">通过</td>
+                        <td>192K</td>
+                        <td>15MS</td>
+                        <td>C</td>
+                        <td>108B</td>
+                        <td>2000-12-20 08:23:01</td>
+                    </tr>
+                </table>
+                <p>
+                    [首页] [上一页] <b>1</b> [<a href="?page=2">2</a>] [<a href="?page=3">3</a>] ... [<a href="?page=58">58</a>] [<a href="?page=2">下一页</a>] [<a href="?page=58">末页</a>]
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:31:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 
