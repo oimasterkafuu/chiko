@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试数据管理 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html">[运行状态]</a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a> |
+                <a href="admin.html">[管理]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">测试数据管理: 1000 - A + B Problem</div>
+                
+                <p>
+                    <form action="admin_test_data_upload.php" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="problem_id" value="1000">
+                        <table>
+                            <tr>
+                                <td>上传测试数据:</td>
+                                <td><input type="file" name="test_data_file"></td>
+                                <td>
+                                    <select name="data_type">
+                                        <option value="input">输入文件</option>
+                                        <option value="output">输出文件</option>
+                                    </select>
+                                </td>
+                                <td>测试点ID:</td>
+                                <td><input type="text" name="test_id" size="5"></td>
+                                <td><input type="submit" value="上传"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </p>
+                
+                <p>
+                    <form action="admin_test_data_batch.php" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="problem_id" value="1000">
+                        <table>
+                            <tr>
+                                <td>批量上传ZIP:</td>
+                                <td><input type="file" name="zip_file"></td>
+                                <td><input type="submit" value="上传压缩包"></td>
+                                <td><small>(ZIP文件中应包含命名为1.in, 1.out, 2.in, 2.out...的测试数据)</small></td>
+                            </tr>
+                        </table>
+                    </form>
+                </p>
+                
+                <p>
+                    <form action="admin_test_data_settings.php" method="post">
+                        <input type="hidden" name="problem_id" value="1000">
+                        <input type="submit" value="重新生成配置文件">
+                    </form>
+                </p>
+                
+                <table class="problems" width="90%" cellspacing="0">
+                    <tr>
+                        <th width="10%">测试点ID</th>
+                        <th width="25%">输入文件</th>
+                        <th width="25%">输出文件</th>
+                        <th width="15%">输入大小</th>
+                        <th width="15%">输出大小</th>
+                        <th width="10%">操作</th>
+                    </tr>
+                    <tr>
+                        <td align="center">1</td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=1&type=input">test1.in</a></td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=1&type=output">test1.out</a></td>
+                        <td align="center">8 bytes</td>
+                        <td align="center">2 bytes</td>
+                        <td align="center">
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该测试点吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=2&type=input">test2.in</a></td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=2&type=output">test2.out</a></td>
+                        <td align="center">8 bytes</td>
+                        <td align="center">2 bytes</td>
+                        <td align="center">
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该测试点吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=3&type=input">test3.in</a></td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=3&type=output">test3.out</a></td>
+                        <td align="center">21 bytes</td>
+                        <td align="center">7 bytes</td>
+                        <td align="center">
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该测试点吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=4&type=input">test4.in</a></td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=4&type=output">test4.out</a></td>
+                        <td align="center">16 bytes</td>
+                        <td align="center">6 bytes</td>
+                        <td align="center">
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该测试点吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">5</td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=5&type=input">test5.in</a></td>
+                        <td align="center"><a href="admin_test_data_view.php?problem_id=1000&test_id=5&type=output">test5.out</a></td>
+                        <td align="center">24 bytes</td>
+                        <td align="center">8 bytes</td>
+                        <td align="center">
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该测试点吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                </table>
+                
+                <br>
+                <div class="title">测试点设置</div>
+                
+                <form action="admin_test_data_config_save.php" method="post">
+                    <input type="hidden" name="problem_id" value="1000">
+                    
+                    <table width="90%" cellpadding="5" style="border:1px solid #999999;">
+                        <tr>
+                            <td width="20%" bgcolor="#EEEEEE">测试点配置:</td>
+                            <td>
+                                <textarea name="test_cases_config" rows="10" cols="80" style="width:100%">{
+    "test_cases": [
+        {"score": 20, "input": "test1.in", "output": "test1.out"},
+        {"score": 20, "input": "test2.in", "output": "test2.out"},
+        {"score": 20, "input": "test3.in", "output": "test3.out"},
+        {"score": 20, "input": "test4.in", "output": "test4.out"},
+        {"score": 20, "input": "test5.in", "output": "test5.out"}
+    ],
+    "subtasks": []
+}</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">特判程序:</td>
+                            <td>
+                                <textarea name="spj_code" rows="15" cols="80" style="width:100%">#include <cstdio>
+#include <cstring>
+#include "testlib.h"
+
+int main(int argc, char *argv[])
+{
+    // 如需要使用特判程序，请在此处编写代码
+    // 返回0表示通过，返回1表示错误
+    return 0;
+}</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="保存">
+                                <input type="button" value="取消" onclick="window.location='admin_problems.html'">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <br>
+                <a href="admin_problems.html">[返回题目列表]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:32:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>公告管理 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html">[运行状态]</a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a> |
+                <a href="admin.html">[管理]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">公告管理</div>
+                <p class="admin-navbar">
+                    <a href="admin_problems.html">[题目管理]</a> | 
+                    <a href="admin_contest.html">[比赛管理]</a> | 
+                    <a href="admin_user.html">[用户管理]</a> | 
+                    <b>[公告管理]</b> | 
+                    <a href="admin_rejudge.html">[重判系统]</a>
+                </p>
+                
+                <p>
+                    <a href="admin_news_edit.html?id=0"><button>添加新公告</button></a>
+                </p>
+                
+                <form action="admin_news.php" method="get">
+                    <table cellpadding="2">
+                        <tr>
+                            <td>状态：</td>
+                            <td>
+                                <select name="status">
+                                    <option value="-1" selected>全部</option>
+                                    <option value="1">已发布</option>
+                                    <option value="0">草稿</option>
+                                </select>
+                            </td>
+                            <td>关键词：</td>
+                            <td><input type="text" name="keyword" size="20"></td>
+                            <td><input type="submit" value="搜索"></td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <table class="problems" width="95%" cellspacing="0">
+                    <tr>
+                        <th width="8%">ID</th>
+                        <th width="40%">标题</th>
+                        <th width="15%">发布时间</th>
+                        <th width="10%">状态</th>
+                        <th width="10%">置顶</th>
+                        <th width="17%">操作</th>
+                    </tr>
+                    <tr>
+                        <td align="center">10</td>
+                        <td><a href="news_detail.html?id=10">CHIKO OJ系统升级通知</a></td>
+                        <td align="center">2000-12-19 10:00:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">是</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=10">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">9</td>
+                        <td><a href="news_detail.html?id=9">关于2000年度编程挑战赛的通知</a></td>
+                        <td align="center">2000-12-15 15:30:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">是</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=9">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">8</td>
+                        <td><a href="news_detail.html?id=8">编程竞赛系列讲座通知</a></td>
+                        <td align="center">2000-12-08 09:45:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=8">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">7</td>
+                        <td><a href="news_detail.html?id=7">关于用户提交代码规范的说明</a></td>
+                        <td align="center">2000-11-30 14:20:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=7">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">6</td>
+                        <td><a href="news_detail.html?id=6">新增Pascal语言支持的通知</a></td>
+                        <td align="center">2000-11-25 11:10:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=6">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">5</td>
+                        <td><a href="news_detail.html?id=5">评测系统判题标准说明</a></td>
+                        <td align="center">2000-11-20 13:40:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=5">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td><a href="news_detail.html?id=4">CHIKO OJ新增题目通知</a></td>
+                        <td align="center">2000-11-10 16:50:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=4">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td><a href="news_detail.html?id=3">关于评测服务器维护的通知</a></td>
+                        <td align="center">2000-11-05 09:30:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=3">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <td><a href="news_detail.html?id=2">欢迎参加CHIKO OJ公测活动</a></td>
+                        <td align="center">2000-10-15 10:20:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=2">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1</td>
+                        <td><a href="news_detail.html?id=1">CHIKO Online Judge系统正式上线</a></td>
+                        <td align="center">2000-10-01 08:00:00</td>
+                        <td align="center">已发布</td>
+                        <td align="center">否</td>
+                        <td align="center">
+                            <a href="admin_news_edit.html?id=1">[编辑]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该公告吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                </table>
+                
+                <p>
+                    [首页] [上一页] <b>1</b> [<a href="?page=2">2</a>] [<a href="?page=2">下一页</a>] [<a href="?page=2">末页</a>]
+                </p>
+                
+                <br>
+                <a href="admin.html">[返回管理菜单]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:32:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 

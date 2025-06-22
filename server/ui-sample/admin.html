@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>系统管理 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html">[运行状态]</a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a> |
+                <a href="admin.html">[管理]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">系统管理</div>
+                
+                <table width="70%" border="0" cellspacing="10">
+                    <tr>
+                        <td width="50%" align="center" valign="top">
+                            <div class="admin-block">
+                                <div class="admin-block-title">题目管理</div>
+                                <ul class="admin-list">
+                                    <li><a href="admin_problems.html">题目列表</a></li>
+                                    <li><a href="admin_problem_edit.html?id=0">添加新题目</a></li>
+                                    <li><a href="admin_export.html">导出题目</a></li>
+                                    <li><a href="admin_import.html">导入题目</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td width="50%" align="center" valign="top">
+                            <div class="admin-block">
+                                <div class="admin-block-title">比赛管理</div>
+                                <ul class="admin-list">
+                                    <li><a href="admin_contest.html">比赛列表</a></li>
+                                    <li><a href="admin_contest_edit.html?id=0">添加新比赛</a></li>
+                                    <li><a href="admin_contest_problems.html">管理比赛题目</a></li>
+                                    <li><a href="admin_contest_users.html">管理参赛用户</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <div class="admin-block">
+                                <div class="admin-block-title">用户管理</div>
+                                <ul class="admin-list">
+                                    <li><a href="admin_user.html">用户列表</a></li>
+                                    <li><a href="admin_user_edit.html?id=0">添加新用户</a></li>
+                                    <li><a href="admin_privilege.html">管理员权限设置</a></li>
+                                    <li><a href="admin_login_log.html">用户登录日志</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td align="center" valign="top">
+                            <div class="admin-block">
+                                <div class="admin-block-title">公告管理</div>
+                                <ul class="admin-list">
+                                    <li><a href="admin_news.html">公告列表</a></li>
+                                    <li><a href="admin_news_edit.html?id=0">添加新公告</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <div class="admin-block">
+                                <div class="admin-block-title">系统工具</div>
+                                <ul class="admin-list">
+                                    <li><a href="admin_rejudge.html">重判系统</a></li>
+                                    <li><a href="admin_backup.html">数据库备份</a></li>
+                                    <li><a href="admin_judge_status.html">评测机状态</a></li>
+                                    <li><a href="admin_system_log.html">系统日志</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td align="center" valign="top">
+                            <div class="admin-block">
+                                <div class="admin-block-title">系统信息</div>
+                                <table width="90%" cellspacing="2" cellpadding="2" class="admin-info">
+                                    <tr>
+                                        <td width="40%">总用户数:</td>
+                                        <td>1,256 人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>总提交数:</td>
+                                        <td>52,487 次</td>
+                                    </tr>
+                                    <tr>
+                                        <td>通过率:</td>
+                                        <td>38.2%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>题目总数:</td>
+                                        <td>127 道</td>
+                                    </tr>
+                                    <tr>
+                                        <td>服务器负载:</td>
+                                        <td>0.32, 0.15, 0.08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>服务器时间:</td>
+                                        <td>2000-12-20 08:32:45</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+                <style>
+                    .admin-block {
+                        border: 1px solid #999999;
+                        width: 90%;
+                        margin-bottom: 10px;
+                        text-align: left;
+                    }
+                    .admin-block-title {
+                        background-color: #DDDDDD;
+                        font-weight: bold;
+                        padding: 5px;
+                        border-bottom: 1px solid #999999;
+                    }
+                    .admin-list {
+                        line-height: 1.5;
+                    }
+                    .admin-info {
+                        width: 100%;
+                    }
+                    .admin-info tr:nth-child(odd) {
+                        background-color: #F5F5F5;
+                    }
+                </style>
+                
+                <br>
+                <a href="index.html">[返回主页]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:32:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 

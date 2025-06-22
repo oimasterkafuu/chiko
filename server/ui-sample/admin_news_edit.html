@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>编辑公告 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html">[运行状态]</a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a> |
+                <a href="admin.html">[管理]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">编辑公告: CHIKO OJ系统升级通知</div>
+                
+                <form action="admin_news_save.php" method="post">
+                    <input type="hidden" name="news_id" value="10">
+                    
+                    <table width="90%" cellpadding="5" style="border:1px solid #999999;">
+                        <tr>
+                            <td width="20%" bgcolor="#EEEEEE">公告ID:</td>
+                            <td>10 (系统自动生成，不可修改)</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">标题:</td>
+                            <td><input type="text" name="title" size="60" value="CHIKO OJ系统升级通知"></td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">内容:</td>
+                            <td>
+                                <textarea name="content" rows="20" cols="80" style="width:100%">尊敬的用户:
+
+为了提供更好的Online Judge服务，CHIKO OJ系统将于2000年12月22日凌晨2:00-6:00进行系统升级维护，期间所有评测和提交功能将暂时关闭。
+
+此次升级主要内容:
+
+1. 增强评测系统稳定性，优化评测机负载均衡
+2. 修复部分题目描述显示异常问题
+3. 提高提交代码时的响应速度
+4. 改进排行榜更新机制
+5. 优化数据库性能
+
+升级完成后，用户将获得以下体验改进:
+- 评测结果显示更加快速和准确
+- 代码提交后反馈时间缩短
+- 排行榜实时性更强
+- 系统整体稳定性增强
+
+升级期间给您带来的不便，敬请谅解。如有任何问题，请发送邮件至 admin@chikooj.org
+
+谢谢您的支持！
+
+CHIKO OJ管理团队
+2000年12月19日</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">置顶:</td>
+                            <td>
+                                <select name="is_top">
+                                    <option value="1" selected>是</option>
+                                    <option value="0">否</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">状态:</td>
+                            <td>
+                                <select name="status">
+                                    <option value="1" selected>发布</option>
+                                    <option value="0">草稿</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">发布时间:</td>
+                            <td><input type="text" name="create_time" value="2000-12-19 10:00:00"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="保存">
+                                <input type="button" value="取消" onclick="window.location='admin_news.html'">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <p>
+                    <strong>内容格式提示:</strong><br>
+                    - 支持基本HTML标签: &lt;p&gt;, &lt;br&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;strong&gt;<br>
+                    - 支持有序列表: &lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;<br>
+                    - 支持无序列表: &lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;<br>
+                    - 不支持JavaScript和其他高级HTML功能
+                </p>
+                
+                <br>
+                <a href="admin_news.html">[返回公告列表]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:32:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 

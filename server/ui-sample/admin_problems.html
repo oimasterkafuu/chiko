@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>题目管理 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html">[运行状态]</a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a> |
+                <a href="admin.html">[管理]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">题目管理</div>
+                <p class="admin-navbar">
+                    <b>[题目管理]</b> | 
+                    <a href="admin_contest.html">[比赛管理]</a> | 
+                    <a href="admin_user.html">[用户管理]</a> | 
+                    <a href="admin_news.html">[公告管理]</a> | 
+                    <a href="admin_rejudge.html">[重判系统]</a>
+                </p>
+                
+                <p>
+                    <a href="admin_problem_edit.html?id=0"><button>添加新题目</button></a>
+                    &nbsp;
+                    <a href="admin_export.html"><button>导出题目</button></a>
+                    &nbsp;
+                    <a href="admin_import.html"><button>导入题目</button></a>
+                </p>
+                
+                <form action="admin_problems.php" method="get">
+                    <table cellpadding="2">
+                        <tr>
+                            <td>ID：</td>
+                            <td><input type="text" name="problem_id" size="10"></td>
+                            <td>关键词：</td>
+                            <td><input type="text" name="keyword" size="20"></td>
+                            <td>状态：</td>
+                            <td>
+                                <select name="status">
+                                    <option value="-1" selected>全部</option>
+                                    <option value="1">可用</option>
+                                    <option value="0">隐藏</option>
+                                </select>
+                            </td>
+                            <td><input type="submit" value="搜索"></td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <table class="problems" width="95%" cellspacing="0">
+                    <tr>
+                        <th width="8%">ID</th>
+                        <th width="40%">题目名称</th>
+                        <th width="8%">添加时间</th>
+                        <th width="8%">状态</th>
+                        <th width="8%">提交</th>
+                        <th width="8%">通过率</th>
+                        <th width="20%">操作</th>
+                    </tr>
+                    <tr>
+                        <td align="center">1000</td>
+                        <td><a href="problem_detail.html?id=1000">A + B Problem</a></td>
+                        <td align="center">2000-06-01</td>
+                        <td align="center">可用</td>
+                        <td align="center">1256</td>
+                        <td align="center">86.5%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1000">[编辑]</a>
+                            <a href="admin_test_data.html?id=1000">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1001</td>
+                        <td><a href="problem_detail.html?id=1001">Exponentiation</a></td>
+                        <td align="center">2000-06-01</td>
+                        <td align="center">可用</td>
+                        <td align="center">865</td>
+                        <td align="center">45.2%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1001">[编辑]</a>
+                            <a href="admin_test_data.html?id=1001">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1002</td>
+                        <td><a href="problem_detail.html?id=1002">487-3279</a></td>
+                        <td align="center">2000-06-02</td>
+                        <td align="center">可用</td>
+                        <td align="center">687</td>
+                        <td align="center">37.8%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1002">[编辑]</a>
+                            <a href="admin_test_data.html?id=1002">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1003</td>
+                        <td><a href="problem_detail.html?id=1003">Hangover</a></td>
+                        <td align="center">2000-06-02</td>
+                        <td align="center">可用</td>
+                        <td align="center">723</td>
+                        <td align="center">56.7%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1003">[编辑]</a>
+                            <a href="admin_test_data.html?id=1003">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1004</td>
+                        <td><a href="problem_detail.html?id=1004">Financial Management</a></td>
+                        <td align="center">2000-06-03</td>
+                        <td align="center">可用</td>
+                        <td align="center">821</td>
+                        <td align="center">82.4%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1004">[编辑]</a>
+                            <a href="admin_test_data.html?id=1004">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1005</td>
+                        <td><a href="problem_detail.html?id=1005">I Think I Need a Houseboat</a></td>
+                        <td align="center">2000-06-04</td>
+                        <td align="center">可用</td>
+                        <td align="center">576</td>
+                        <td align="center">62.3%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1005">[编辑]</a>
+                            <a href="admin_test_data.html?id=1005">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1006</td>
+                        <td><a href="problem_detail.html?id=1006">Biorhythms</a></td>
+                        <td align="center">2000-06-04</td>
+                        <td align="center">隐藏</td>
+                        <td align="center">432</td>
+                        <td align="center">31.5%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1006">[编辑]</a>
+                            <a href="admin_test_data.html?id=1006">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1007</td>
+                        <td><a href="problem_detail.html?id=1007">DNA Sorting</a></td>
+                        <td align="center">2000-06-05</td>
+                        <td align="center">可用</td>
+                        <td align="center">398</td>
+                        <td align="center">41.2%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1007">[编辑]</a>
+                            <a href="admin_test_data.html?id=1007">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1008</td>
+                        <td><a href="problem_detail.html?id=1008">Maya Calendar</a></td>
+                        <td align="center">2000-06-05</td>
+                        <td align="center">隐藏</td>
+                        <td align="center">254</td>
+                        <td align="center">21.3%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1008">[编辑]</a>
+                            <a href="admin_test_data.html?id=1008">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">1009</td>
+                        <td><a href="problem_detail.html?id=1009">Edge Detection</a></td>
+                        <td align="center">2000-06-06</td>
+                        <td align="center">可用</td>
+                        <td align="center">287</td>
+                        <td align="center">29.6%</td>
+                        <td align="center">
+                            <a href="admin_problem_edit.html?id=1009">[编辑]</a>
+                            <a href="admin_test_data.html?id=1009">[测试数据]</a>
+                            <a href="javascript:void(0)" onclick="return confirm('确定要删除该题目吗？')">[删除]</a>
+                        </td>
+                    </tr>
+                </table>
+                
+                <p>
+                    [首页] [上一页] <b>1</b> [<a href="?page=2">2</a>] [<a href="?page=3">3</a>] ... [<a href="?page=10">10</a>] [<a href="?page=2">下一页</a>] [<a href="?page=10">末页</a>]
+                </p>
+                
+                <br>
+                <a href="admin.html">[返回管理菜单]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:32:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 

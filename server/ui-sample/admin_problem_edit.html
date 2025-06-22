@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>题目编辑 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html">[运行状态]</a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a> |
+                <a href="admin.html">[管理]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">编辑题目: 1000 - A + B Problem</div>
+                
+                <form action="admin_problem_save.php" method="post">
+                    <input type="hidden" name="problem_id" value="1000">
+                    
+                    <table width="90%" cellpadding="5" style="border:1px solid #999999;">
+                        <tr>
+                            <td width="20%" bgcolor="#EEEEEE">题目ID:</td>
+                            <td>1000 (系统自动生成，不可修改)</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">标题:</td>
+                            <td><input type="text" name="title" size="60" value="A + B Problem"></td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">时间限制:</td>
+                            <td><input type="text" name="time_limit" size="10" value="1000"> MS</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">内存限制:</td>
+                            <td><input type="text" name="memory_limit" size="10" value="32768"> KB</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">描述:</td>
+                            <td>
+                                <textarea name="description" rows="10" cols="80" style="width:100%">Calculate A + B.</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">输入:</td>
+                            <td>
+                                <textarea name="input" rows="8" cols="80" style="width:100%">Each line will contain two integers A and B. Process to end of file.</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">输出:</td>
+                            <td>
+                                <textarea name="output" rows="8" cols="80" style="width:100%">For each case, output A + B in one line.</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">样例输入:</td>
+                            <td>
+                                <textarea name="sample_input" rows="6" cols="80" style="width:100%">1 2
+3 4</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">样例输出:</td>
+                            <td>
+                                <textarea name="sample_output" rows="6" cols="80" style="width:100%">3
+7</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">提示:</td>
+                            <td>
+                                <textarea name="hint" rows="6" cols="80" style="width:100%">The input numbers are 32-bit integers.</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">来源:</td>
+                            <td><input type="text" name="source" size="60" value="Standard Input/Output Practice"></td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">标签:</td>
+                            <td><input type="text" name="tags" size="60" value="基础,入门,数学"></td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">难度:</td>
+                            <td>
+                                <select name="difficulty">
+                                    <option value="1" selected>入门</option>
+                                    <option value="2">简单</option>
+                                    <option value="3">中等</option>
+                                    <option value="4">困难</option>
+                                    <option value="5">专家</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">评分:</td>
+                            <td>
+                                <select name="scoring">
+                                    <option value="1" selected>传统评分 (0-100)</option>
+                                    <option value="2">Accepted/Wrong Answer</option>
+                                    <option value="3">测试点评分</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">特判程序:</td>
+                            <td>
+                                <select name="spj">
+                                    <option value="0" selected>不使用</option>
+                                    <option value="1">使用</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#EEEEEE">状态:</td>
+                            <td>
+                                <select name="status">
+                                    <option value="1" selected>可用</option>
+                                    <option value="0">隐藏</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="保存">
+                                <input type="button" value="取消" onclick="window.location='admin_problems.html'">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <br>
+                <a href="admin_problems.html">[返回题目列表]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:32:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>比赛提交状态 - CHIKO Online Judge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="refresh" content="30">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+</head>
+<body>
+    <table class="main" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="header" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font size="+2">CHIKO Online Judge</font></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="navbar">
+                <a href="index.html">[主页]</a> |
+                <a href="problem.html">[题目列表]</a> |
+                <a href="status.html">[运行状态]</a> |
+                <a href="ranklist.html">[排名]</a> |
+                <a href="contest.html">[比赛]</a> |
+                <a href="faq.html">[F.A.Q]</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <br>
+                <div class="title">比赛提交状态: 2000年度编程挑战赛</div>
+                <p>
+                    <a href="contest_detail.html?id=10">[比赛详情]</a> | 
+                    <a href="contest_rank.html?id=10">[比赛排名]</a> | 
+                    <b>[比赛状态]</b>
+                </p>
+                <p>每30秒自动刷新一次</p>
+                
+                <form action="contest_status.php" method="get">
+                    <input type="hidden" name="contest_id" value="10">
+                    <table cellpadding="2">
+                        <tr>
+                            <td>题目ID：</td>
+                            <td>
+                                <select name="problem_id">
+                                    <option value="-1" selected>全部</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                    <option value="H">H</option>
+                                </select>
+                            </td>
+                            <td>用户：</td>
+                            <td><input type="text" name="user_id" size="10"></td>
+                            <td>结果：</td>
+                            <td>
+                                <select name="result">
+                                    <option value="-1" selected>全部</option>
+                                    <option value="4">通过</option>
+                                    <option value="0">等待</option>
+                                    <option value="1">编译错误</option>
+                                    <option value="2">答案错误</option>
+                                    <option value="3">超时</option>
+                                </select>
+                            </td>
+                            <td><input type="submit" value="查询"></td>
+                        </tr>
+                    </table>
+                </form>
+                
+                <table class="status" width="95%" cellspacing="0">
+                    <tr style="background-color: #CCCCCC; font-weight: bold;">
+                        <td width="8%">运行ID</td>
+                        <td width="15%">用户</td>
+                        <td width="8%">题目</td>
+                        <td width="15%">结果</td>
+                        <td width="8%">内存</td>
+                        <td width="8%">时间</td>
+                        <td width="8%">语言</td>
+                        <td width="8%">代码长度</td>
+                        <td width="22%">提交时间</td>
+                    </tr>
+                    <tr>
+                        <td>10086</td>
+                        <td><a href="user.html?user=zhang3">zhang3</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=G">G</a></td>
+                        <td class="wrong">答案错误</td>
+                        <td>512K</td>
+                        <td>254MS</td>
+                        <td>C++</td>
+                        <td>487B</td>
+                        <td>2000-12-20 08:28:17</td>
+                    </tr>
+                    <tr>
+                        <td>10085</td>
+                        <td><a href="user.html?user=li4">li4</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=F">F</a></td>
+                        <td class="wrong">答案错误</td>
+                        <td>386K</td>
+                        <td>126MS</td>
+                        <td>C++</td>
+                        <td>320B</td>
+                        <td>2000-12-20 08:26:55</td>
+                    </tr>
+                    <tr>
+                        <td>10084</td>
+                        <td><a href="user.html?user=wang5">wang5</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=E">E</a></td>
+                        <td class="wrong">超时</td>
+                        <td>640K</td>
+                        <td>1000MS</td>
+                        <td>Java</td>
+                        <td>502B</td>
+                        <td>2000-12-20 08:25:32</td>
+                    </tr>
+                    <tr>
+                        <td>10083</td>
+                        <td><a href="user.html?user=zhang3">zhang3</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=F">F</a></td>
+                        <td class="accepted">通过</td>
+                        <td>356K</td>
+                        <td>98MS</td>
+                        <td>C++</td>
+                        <td>314B</td>
+                        <td>2000-12-20 08:23:45</td>
+                    </tr>
+                    <tr>
+                        <td>10082</td>
+                        <td><a href="user.html?user=zhao6">zhao6</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=D">D</a></td>
+                        <td class="wrong">编译错误</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Pascal</td>
+                        <td>210B</td>
+                        <td>2000-12-20 08:22:19</td>
+                    </tr>
+                    <tr>
+                        <td>10081</td>
+                        <td><a href="user.html?user=sun7">sun7</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=F">F</a></td>
+                        <td>等待</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>C++</td>
+                        <td>278B</td>
+                        <td>2000-12-20 08:21:52</td>
+                    </tr>
+                    <tr>
+                        <td>10080</td>
+                        <td><a href="user.html?user=user6">user6</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=D">D</a></td>
+                        <td class="wrong">答案错误</td>
+                        <td>392K</td>
+                        <td>147MS</td>
+                        <td>C++</td>
+                        <td>382B</td>
+                        <td>2000-12-20 08:19:05</td>
+                    </tr>
+                    <tr>
+                        <td>10079</td>
+                        <td><a href="user.html?user=user7">user7</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=C">C</a></td>
+                        <td class="accepted">通过</td>
+                        <td>463K</td>
+                        <td>215MS</td>
+                        <td>C++</td>
+                        <td>426B</td>
+                        <td>2000-12-20 08:17:58</td>
+                    </tr>
+                    <tr>
+                        <td>10078</td>
+                        <td><a href="user.html?user=user8">user8</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=B">B</a></td>
+                        <td class="accepted">通过</td>
+                        <td>276K</td>
+                        <td>54MS</td>
+                        <td>C</td>
+                        <td>198B</td>
+                        <td>2000-12-20 08:16:01</td>
+                    </tr>
+                    <tr>
+                        <td>10077</td>
+                        <td><a href="user.html?user=wang5">wang5</a></td>
+                        <td><a href="contest_problem.html?cid=10&pid=D">D</a></td>
+                        <td class="accepted">通过</td>
+                        <td>361K</td>
+                        <td>128MS</td>
+                        <td>C++</td>
+                        <td>367B</td>
+                        <td>2000-12-20 08:15:05</td>
+                    </tr>
+                </table>
+                
+                <p>
+                    [首页] [上一页] <b>1</b> [<a href="?page=2&contest_id=10">2</a>] [<a href="?page=3&contest_id=10">3</a>] ... [<a href="?page=9&contest_id=10">9</a>] [<a href="?page=2&contest_id=10">下一页</a>] [<a href="?page=9&contest_id=10">末页</a>]
+                </p>
+                
+                <br>
+                <a href="contest_detail.html?id=10">[返回比赛详情]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Copyright &copy; 2000 CHIKO Online Judge<br>
+                服务器时间: 2000-12-20 08:32:45
+            </td>
+        </tr>
+    </table>
+</body>
+</html> 
