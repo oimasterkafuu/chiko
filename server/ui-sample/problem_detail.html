@@ -4,6 +4,39 @@
     <title>A + B Problem - CHIKO Online Judge</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="images/chiko.png" type="image/png">
+    <!-- Markdown支持 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.0/marked.min.js"></script>
+    <!-- KaTeX支持 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/contrib/auto-render.min.js"></script>
+    
+    <script>
+    // 这是一个在2000年风格的网站中引入现代功能的简单模拟
+    window.onload = function() {
+        // 将题目描述内容转换为Markdown
+        try {
+            var problemDesc = document.getElementById('problem_description');
+            if (problemDesc) {
+                var markdown = problemDesc.getAttribute('data-markdown');
+                if (markdown) {
+                    problemDesc.innerHTML = marked(markdown);
+                    
+                    // 渲染KaTeX
+                    renderMathInElement(problemDesc, {
+                        delimiters: [
+                            {left: "$$", right: "$$", display: true},
+                            {left: "$", right: "$", display: false}
+                        ]
+                    });
+                }
+            }
+        } catch (e) {
+            console.log("Markdown/KaTeX处理错误:", e);
+        }
+    };
+    </script>
 </head>
 <body>
     <table class="main" cellpadding="0" cellspacing="0">
@@ -11,7 +44,9 @@
             <td>
                 <table class="header" cellpadding="5" cellspacing="0">
                     <tr>
-                        <td><font size="+2">CHIKO Online Judge</font></td>
+                        <td>
+<font size="+2">CHIKO Online Judge</font>
+                        </td>
                     </tr>
                 </table>
             </td>
@@ -38,6 +73,34 @@
                 <table width="90%" cellpadding="10">
                     <tr>
                         <td align="left" valign="top">
+                            <div id="problem_description" data-markdown="## 题目描述
+
+计算a+b的和。
+
+## 输入格式
+
+输入包含一行，包含两个整数a和b $(0 \leq a, b \leq 10^9)$，以空格分隔。
+
+## 输出格式
+
+输出一个整数，表示a+b的和。
+
+## 样例输入
+```
+1 2
+```
+
+## 样例输出
+```
+3
+```
+
+## 提示
+
+这是一道简单的入门题目，旨在让你熟悉OJ的提交流程。
+
+注意: $a + b$ 是一个数学表达式，可以通过KaTeX渲染。
+">
                             <b>题目描述</b>
                             <p>计算a+b的和。</p>
                             
@@ -55,6 +118,7 @@
                             
                             <b>提示</b>
                             <p>这是一道简单的入门题目，旨在让你熟悉OJ的提交流程。</p>
+                            </div>
                         </td>
                     </tr>
                     <tr>
