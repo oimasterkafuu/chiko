@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
     <title>A + B Problem - CHIKO Online Judge</title>
@@ -14,7 +14,7 @@
     
     <script>
     // 这是一个在2000年风格的网站中引入现代功能的简单模拟
-    window.onload = function() {
+    document.addEventListener("DOMContentLoaded", function() {
         // 将题目描述内容转换为Markdown
         try {
             var problemDesc = document.getElementById('problem_description');
@@ -24,18 +24,19 @@
                     problemDesc.innerHTML = marked(markdown);
                     
                     // 渲染KaTeX
-                    renderMathInElement(problemDesc, {
+                    renderMathInElement(document.getElementById('problem_description'), {
                         delimiters: [
                             {left: "$$", right: "$$", display: true},
                             {left: "$", right: "$", display: false}
-                        ]
+                        ],
+                        throwOnError: false
                     });
                 }
             }
         } catch (e) {
             console.log("Markdown/KaTeX处理错误:", e);
         }
-    };
+    });
     </script>
 </head>
 <body>

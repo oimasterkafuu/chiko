@@ -1,10 +1,50 @@
+/* 保持2000年风格但用现代语法 */
+html {
+    /* 强制使用较大的基础字体大小，模拟2000年代的默认字体大小 */
+    font-size: 18px;
+}
+
 body {
     background-color: #F0F0F0;
     font-family: Verdana, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 16px; /* 进一步增大基础字体大小 */
     margin: 0;
     padding: 0;
     color: #000000;
+    line-height: 1.5; /* 增加行高提高可读性 */
+}
+
+/* 标题样式增强 */
+h1, h2, h3, h4, h5, h6 {
+    color: #003366;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h1 { font-size: 24px; margin: 14px 0; }
+h2 { font-size: 22px; margin: 12px 0; }
+h3 { font-size: 20px; margin: 10px 0; }
+h4 { font-size: 18px; margin: 10px 0; }
+h5 { font-size: 17px; margin: 8px 0; }
+h6 { font-size: 16px; margin: 8px 0; }
+
+/* 问题描述中的标题 */
+#problem_description h1 { font-size: 24px; margin-bottom: 14px; }
+#problem_description h2 { font-size: 22px; margin-bottom: 12px; }
+#problem_description h3 { font-size: 20px; margin-bottom: 10px; }
+
+/* Markdown 渲染区域的强调 */
+#problem_description {
+    font-size: 18px; /* 增大问题描述区内容字体 */
+    line-height: 1.6;
+}
+
+#problem_description pre {
+    font-size: 18px;
+    background-color: #F8F8F8;
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    margin: 15px 0;
 }
 
 table {
@@ -22,6 +62,12 @@ table.header {
     background-color: #6699CC;
     color: white;
     font-weight: bold;
+    padding: 8px; /* 增加内边距 */
+}
+
+/* 标题字体大小控制 */
+table.header font {
+    font-size: 28px !important; /* 进一步增大头部标题字体 */
 }
 
 table.problems {
@@ -30,20 +76,35 @@ table.problems {
 
 table.problems td, table.problems th {
     border: 1px solid #CCCCCC;
-    padding: 4px;
+    padding: 8px;
+    font-size: 16px; /* 进一步增大表格字体 */
 }
 
 table.problems th {
     background-color: #CCCCCC;
+    font-size: 18px; /* 恢复到合适的大小 */
+    padding: 8px;
+    font-weight: bold;
 }
 
 table.status td {
-    padding: 3px;
+    padding: 8px;
     border-bottom: 1px solid #CCCCCC;
+    font-size: 16px; /* 增大状态表格字体 */
 }
 
 table.status tr:nth-child(odd) {
     background-color: #EEEEEE;
+}
+
+/* 表格标题行样式增强 */
+tr:first-child th, 
+table.problems tr:first-child th,
+table.status tr:first-child td {
+    font-size: 18px !important; /* 恢复到更合适的大小 */
+    background-color: #CCCCCC;
+    padding: 8px;
+    font-weight: bold;
 }
 
 .accepted {
@@ -59,6 +120,7 @@ table.status tr:nth-child(odd) {
 a {
     color: #0000FF;
     text-decoration: none;
+    font-size: 16px; /* 统一链接字体大小 */
 }
 
 a:hover {
@@ -67,37 +129,48 @@ a:hover {
 
 .navbar {
     background-color: #DDDDDD;
-    padding: 5px;
+    padding: 10px; /* 进一步增加导航栏内边距 */
     text-align: center;
     border-bottom: 1px solid #999999;
+    font-size: 18px; /* 进一步增大导航栏字体 */
+    font-weight: bold; /* 加粗导航栏文字 */
 }
 
 .footer {
     text-align: center;
-    font-size: 10px;
+    font-size: 14px; /* 进一步增大页脚字体 */
     color: #666666;
-    padding: 10px;
+    padding: 12px;
+    margin-top: 20px;
 }
 
 textarea {
     font-family: "Courier New", monospace;
-    font-size: 12px;
+    font-size: 16px; /* 进一步增大代码区字体 */
+    padding: 8px;
+    line-height: 1.5;
 }
 
 input {
     border: 1px solid #999999;
-    padding: 2px;
+    padding: 6px;
+    font-size: 16px; /* 进一步增大输入框字体 */
+    font-family: Verdana, Arial, sans-serif;
 }
 
 input[type="submit"] {
     background-color: #CCCCCC;
     border: 1px outset #DDDDDD;
-    padding: 2px 5px;
+    padding: 6px 12px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .title {
-    font-size: 16px;
+    font-size: 24px; /* 恢复到更合理的大小 */
     font-weight: bold;
     color: #003366;
+    margin: 12px 0;
+    line-height: 1.2;
 } 
