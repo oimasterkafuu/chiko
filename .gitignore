@@ -1,0 +1,26 @@
+# 编译后的可执行文件
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# Node.js依赖
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp
+.pnp.js
+
+# 沙盒临时目录
+judger/test/sandbox_tmp/
+
+# 编辑器和IDE文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db 

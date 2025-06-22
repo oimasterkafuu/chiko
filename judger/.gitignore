@@ -1,0 +1,32 @@
+# 编译后的可执行文件
+test/add
+test/add_fileio
+
+# 沙盒临时目录
+test/sandbox_tmp/
+
+# Node.js依赖
+node_modules/
+yarn-error.log
+
+# 沙盒构建文件
+simple-sandbox/build/
+
+# 编译缓存
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.gch
+*.pch
+
+# 编辑器和IDE文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db 
